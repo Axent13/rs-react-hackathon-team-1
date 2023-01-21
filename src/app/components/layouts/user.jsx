@@ -10,7 +10,7 @@ const User = () => {
 
     useEffect(() => {
         api.users.getById(userId).then((data) => setUser(data));
-    });
+    }, []);
 
     return (
         <div>
