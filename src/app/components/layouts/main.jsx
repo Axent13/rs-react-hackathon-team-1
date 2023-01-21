@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import api from "../../api";
-import Loader from "../Loader";
+import Loader from "../common/Loader";
 import UserCard from "../ui/userCard";
 
 const Main = () => {
     const [users, setUsers] = useState();
 
     useEffect(() => {
-        api.users.fetchAll().then((data) => setUsers(data).then());
+        api.users.fetchAll().then((data) => setUsers(data));
     }, []);
 
     return (
