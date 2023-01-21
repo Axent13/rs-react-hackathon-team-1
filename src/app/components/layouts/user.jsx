@@ -34,6 +34,7 @@ const User = () => {
                                     <a
                                         href={social.link}
                                         rel="noopener noreferrer"
+                                        target="_blank"
                                     >
                                         <img
                                             src={`../${social.iconUrl}`}

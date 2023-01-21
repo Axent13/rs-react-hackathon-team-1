@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const UserCard = ({ user }) => {
+    console.log(user);
     return (
         <div className="border-solid rounded-md border-black border-2 p-2">
             <div>Имя: {user.name}</div>
@@ -13,7 +14,11 @@ const UserCard = ({ user }) => {
                 Социальные сети:
                 {user.socials.map((social) => (
                     <div className="max-w-[40px]" key={social.name}>
-                        <a href={social.link} rel="noopener noreferrer">
+                        <a
+                            href={social.link}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
                             <img src={social.iconUrl} alt={social.name} />
                         </a>
                     </div>
