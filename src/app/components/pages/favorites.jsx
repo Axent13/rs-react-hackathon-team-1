@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from "react";
-import api from "../../api";
+import React, { useEffect, useState } from "react";
+import API from "../../api";
 import Loader from "../common/Loader";
 import UserCard from "../ui/userCard";
 
-const Main = () => {
+const Favorites = () => {
     const [users, setUsers] = useState();
 
     useEffect(() => {
-        api.users.fetchAll().then((data) => setUsers(data));
-    }, []);
+        API.users
+            .fetchAll()
+            .then((data) => setUsers(data.filter((u) => u.bookmark)));
+    }, [users]);
 
     const handleToggleUserFavorite = (userId) => {
         setUsers((prev) =>
@@ -16,14 +18,13 @@ const Main = () => {
                 u._id === userId ? { ...u, bookmark: !u.bookmark } : u
             )
         );
-        api.users.toggleUserBookmarkById(userId).then((data) => setUsers(data));
+        API.users.toggleUserBookmarkById(userId).then((data) => setUsers(data));
     };
 
     return (
         <>
             <div>
-                <h1 className="text-3xl font-bold">Страница команды</h1>
-                <p>Описание команды</p>
+                <h1 className="text-3xl font-bold">Избранное</h1>
             </div>
             {!users ? (
                 <div className="container mx-auto max-w-2xl flex justify-center items-center h-screen">
@@ -44,4 +45,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Favorites;

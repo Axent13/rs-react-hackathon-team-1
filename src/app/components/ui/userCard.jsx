@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Button from "../common/Button";
+import { useHistory } from "react-router";
 
-const UserCard = ({ user }) => {
-    console.log(user);
+const UserCard = ({ user, handleToggleUserFavorite }) => {
+    const history = useHistory();
     return (
         <div className="relative border-solid rounded-md border-black border-2 p-2">
             <div>Имя: {user.name}</div>
@@ -38,13 +39,13 @@ const UserCard = ({ user }) => {
                 label="Открыть"
                 color="indigo"
                 rounded="rounded-md"
-                handleClick={() => console.log("open card")}
+                handleClick={() => history.push(`/user/${user._id}`)}
             />
             <div className="absolute top-0 right-0 m-2">
                 <Button
                     color="yellow"
                     tooltip={"Добавить в избранное"}
-                    handleClick={() => console.log("add favorite")}
+                    handleClick={() => handleToggleUserFavorite(user._id)}
                     rounded="rounded-full"
                 >
                     <img
@@ -63,7 +64,8 @@ const UserCard = ({ user }) => {
 };
 
 UserCard.propTypes = {
-    user: PropTypes.object
+    user: PropTypes.object,
+    handleToggleUserFavorite: PropTypes.func
 };
 
 export default UserCard;
