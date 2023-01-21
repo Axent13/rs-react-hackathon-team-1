@@ -10,6 +10,15 @@ const Main = () => {
         api.users.fetchAll().then((data) => setUsers(data));
     }, []);
 
+    const handleToggleUserFavorite = (userId) => {
+        setUsers((prev) =>
+            prev.map((u) =>
+                u._id === userId ? { ...u, bookmark: !u.bookmark } : u
+            )
+        );
+        api.users.toggleUserBookmarkById(userId).then((data) => setUsers(data));
+    };
+
     return (
         <>
             <div>
@@ -23,7 +32,11 @@ const Main = () => {
             ) : (
                 <div className="grid grid-cols-3 gap-5">
                     {users.map((user) => (
-                        <UserCard key={user._id} user={user} />
+                        <UserCard
+                            key={user._id}
+                            user={user}
+                            handleToggleUserFavorite={handleToggleUserFavorite}
+                        />
                     ))}
                 </div>
             )}

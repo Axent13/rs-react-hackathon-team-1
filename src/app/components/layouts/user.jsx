@@ -10,7 +10,7 @@ const User = () => {
 
     useEffect(() => {
         api.users.getById(userId).then((data) => setUser(data));
-    });
+    }, []);
 
     return (
         <div>
@@ -66,7 +66,9 @@ const User = () => {
                             Баджи/значки:{" "}
                             <ul>
                                 {user.badges.map((badge) => (
-                                    <li key={badge}>Бадж {badge.text} </li>
+                                    <li key={badge.color}>
+                                        Бадж {badge.text}{" "}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
