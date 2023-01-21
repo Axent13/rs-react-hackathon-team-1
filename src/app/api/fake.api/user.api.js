@@ -6,81 +6,250 @@ function createRandomAvatar() {
 
 const users = [
     {
-        _id: "1",
+        _id: "48d5f821-6151-4474-b475-49f80ecc1395",
         name: "Михаил Силаев",
         age: "31",
-        aboutMe: "Информация о Михаиле",
-        photoUrl: createRandomAvatar(),
-        socials: "Список социальных сетей Михаила",
-        tasks: "Перечень задач Михаила",
-        skills: "Навыки Михаила (прогресс-бар)",
-        badges: "Статусы Михаила (Badges)",
-        portfolio: "Портфолио Михаила",
+        aboutMe:
+            "Привет! :-) Меня зовут Михаил! Занимаюсь изучением Frontend-разработки. В свободное от учебы и работы время люблю изучать иностранные языки (английский и немного пробую японский и корейский). На данный момент живу и работаю в г. Томск.",
+        photoUrl: "assets/images/user-48d5f821-6151-4474-b475-49f80ecc1395.jpg",
+        socials: [
+            {
+                name: "Github",
+                iconUrl: "assets/images/github.png",
+                link: "https://github.com/Axent13"
+            },
+            {
+                name: "Telegram",
+                iconUrl: "assets/images/telegram.png",
+                link: "https://t.me/Axent1398"
+            },
+            {
+                name: "Vk",
+                iconUrl: "assets/images/vk.png",
+                link: "https://vk.com/id492859142"
+            }
+        ],
+        tasks: ["Основа проекта", "Структура fake.api"],
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        badges: [
+            {
+                text: "Ученики",
+                color: "bg-green-600"
+            },
+            {
+                text: "36 группа (Премиум)",
+                color: "bg-teal-500"
+            },
+            {
+                text: "Хакатон React team 1",
+                color: "bg-orange-600"
+            }
+        ],
         bookmark: false
     },
     {
-        _id: "2",
+        _id: "669e86f6-729f-41ee-8a9d-cfaa5c16400a",
         name: "Константин Мухин",
         age: "??",
         aboutMe: "Информация о Константине",
         photoUrl: createRandomAvatar(),
-        socials: "Список социальных сетей Константина",
-        tasks: "Перечень задач Константина",
-        skills: "Навыки Константина (прогресс-бар)",
-        badges: "Статусы Константина (Badges)",
-        portfolio: "Портфолио Константина",
+        socials: [
+            {
+                name: "Github",
+                iconUrl: "assets/images/github.png",
+                link: "https://github.com/Axent13"
+            },
+            {
+                name: "Telegram",
+                iconUrl: "assets/images/telegram.png",
+                link: "https://t.me/Axent1398"
+            },
+            {
+                name: "Vk",
+                iconUrl: "assets/images/vk.png",
+                link: "https://vk.com/id492859142"
+            }
+        ],
+        tasks: ["Основа проекта", "Структура fake.api"],
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        badges: [
+            {
+                text: "Ученики",
+                color: "bg-green-600"
+            },
+            {
+                text: "36 группа (Премиум)",
+                color: "bg-teal-500"
+            },
+            {
+                text: "Хакатон React team 1",
+                color: "bg-orange-600"
+            }
+        ],
         bookmark: false
     },
     {
-        _id: "3",
+        _id: "38565819-0122-4359-98b8-44c28575758d",
         name: "Андрей Перепелкин",
         age: "??",
         aboutMe: "Информация об Андрее",
         photoUrl: createRandomAvatar(),
-        socials: "Список социальных сетей Андрея",
-        tasks: "Перечень задач Андрея (прогресс-бар)",
-        skills: "Навыки Андрея",
-        badges: "Статусы Андрея (Badges)",
-        portfolio: "Портфолио Константина",
+        socials: [
+            {
+                name: "Github",
+                iconUrl: "assets/images/github.png",
+                link: "https://github.com/Axent13"
+            },
+            {
+                name: "Telegram",
+                iconUrl: "assets/images/telegram.png",
+                link: "https://t.me/Axent1398"
+            },
+            {
+                name: "Vk",
+                iconUrl: "assets/images/vk.png",
+                link: "https://vk.com/id492859142"
+            }
+        ],
+        tasks: ["Основа проекта", "Структура fake.api"],
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        badges: [
+            {
+                text: "Ученики",
+                color: "bg-green-600"
+            },
+            {
+                text: "36 группа (Премиум)",
+                color: "bg-teal-500"
+            },
+            {
+                text: "Хакатон React team 1",
+                color: "bg-orange-600"
+            }
+        ],
         bookmark: false
     },
     {
-        _id: "4",
+        _id: "48edb443-9c0d-4423-9f1f-dfd163559236",
         name: "Голодов Максим",
         age: "??",
         aboutMe: "Информация о Максиме",
         photoUrl: createRandomAvatar(),
-        socials: "Список социальных сетей Максима",
-        tasks: "Перечень задач Максима (прогресс-бар)",
-        skills: "Навыки Максима",
-        badges: "Статусы Максима (Badges)",
-        portfolio: "Портфолио Константина",
+        socials: [
+            {
+                name: "Github",
+                iconUrl: "assets/images/github.png",
+                link: "https://github.com/Axent13"
+            },
+            {
+                name: "Telegram",
+                iconUrl: "assets/images/telegram.png",
+                link: "https://t.me/Axent1398"
+            },
+            {
+                name: "Vk",
+                iconUrl: "assets/images/vk.png",
+                link: "https://vk.com/id492859142"
+            }
+        ],
+        tasks: ["Основа проекта", "Структура fake.api"],
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        badges: [
+            {
+                text: "Ученики",
+                color: "bg-green-600"
+            },
+            {
+                text: "36 группа (Премиум)",
+                color: "bg-teal-500"
+            },
+            {
+                text: "Хакатон React team 1",
+                color: "bg-orange-600"
+            }
+        ],
         bookmark: false
     },
     {
-        _id: "5",
+        _id: "a510048c-b12e-4af8-af73-5eac70af21e2",
         name: "Павел Зеленский",
         age: "??",
         aboutMe: "Информация о Павле",
         photoUrl: createRandomAvatar(),
-        socials: "Список социальных сетей Павла",
-        tasks: "Перечень задач Павла (прогресс-бар)",
-        skills: "Навыки Павла",
-        badges: "Статусы Павла (Badges)",
-        portfolio: "Портфолио Константина",
+        socials: [
+            {
+                name: "Github",
+                iconUrl: "assets/images/github.png",
+                link: "https://github.com/Axent13"
+            },
+            {
+                name: "Telegram",
+                iconUrl: "assets/images/telegram.png",
+                link: "https://t.me/Axent1398"
+            },
+            {
+                name: "Vk",
+                iconUrl: "assets/images/vk.png",
+                link: "https://vk.com/id492859142"
+            }
+        ],
+        tasks: ["Основа проекта", "Структура fake.api"],
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        badges: [
+            {
+                text: "Ученики",
+                color: "bg-green-600"
+            },
+            {
+                text: "36 группа (Премиум)",
+                color: "bg-teal-500"
+            },
+            {
+                text: "Хакатон React team 1",
+                color: "bg-orange-600"
+            }
+        ],
         bookmark: false
     },
     {
-        _id: "6",
+        _id: "313f94a7-90e9-4ac0-ac16-ee65579615c4",
         name: "Смирнов Артем",
         age: "??",
         aboutMe: "Информация об Артеме",
         photoUrl: createRandomAvatar(),
-        socials: "Список социальных сетей Артема",
-        tasks: "Перечень задач Артема (прогресс-бар)",
-        skills: "Навыки Артема",
-        badges: "Статусы Артема (Badges)",
-        portfolio: "Портфолио Константина",
+        socials: [
+            {
+                name: "Github",
+                iconUrl: "assets/images/github.png",
+                link: "https://github.com/Axent13"
+            },
+            {
+                name: "Telegram",
+                iconUrl: "assets/images/telegram.png",
+                link: "https://t.me/Axent1398"
+            },
+            {
+                name: "Vk",
+                iconUrl: "assets/images/vk.png",
+                link: "https://vk.com/id492859142"
+            }
+        ],
+        tasks: ["Основа проекта", "Структура fake.api"],
+        skills: ["HTML", "CSS", "JavaScript", "React"],
+        badges: [
+            {
+                text: "Ученики",
+                color: "bg-green-600"
+            },
+            {
+                text: "36 группа (Премиум)",
+                color: "bg-teal-500"
+            },
+            {
+                text: "Хакатон React team 1",
+                color: "bg-orange-600"
+            }
+        ],
         bookmark: false
     }
 ];

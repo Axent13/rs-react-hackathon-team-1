@@ -9,7 +9,16 @@ const UserCard = ({ user }) => {
             <div>
                 Фотография: <img className="max-w-xs" src={user.photoUrl} />
             </div>
-            <div>Социальные сети: {user.socials}</div>
+            <div>
+                Социальные сети:
+                {user.socials.map((social) => (
+                    <div className="max-w-[40px]" key={social.name}>
+                        <a href={social.link} rel="noopener noreferrer">
+                            <img src={social.iconUrl} alt={social.name} />
+                        </a>
+                    </div>
+                ))}
+            </div>
             <div>О себе: {user.aboutMe}</div>
 
             {/* button потом заменить на компонент Кнопки */}

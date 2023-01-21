@@ -22,13 +22,53 @@ const User = () => {
                         <div>О себе: {user.aboutMe}</div>
                         <div>
                             Фотография:{" "}
-                            <img className="max-w-xs" src={user.photoUrl} />
+                            <img
+                                className="max-w-xs"
+                                src={`../${user.photoUrl}`}
+                            />
                         </div>
-                        <div>Социальные сети: {user.socials}</div>
-                        <div>Чем занимался: {user.tasks}</div>
-                        <div>Навыки: {user.skills}</div>
-                        <div>Статусы: {user.badges}</div>
-                        <div>Портфолио: {user.portfolio}</div>
+                        <div>
+                            Социальные сети:{" "}
+                            {user.socials.map((social) => (
+                                <div className="max-w-[40px]" key={social.name}>
+                                    <a
+                                        href={social.link}
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src={`../${social.iconUrl}`}
+                                            alt={social.name}
+                                        />
+                                    </a>
+                                </div>
+                            ))}
+                        </div>
+                        <div>
+                            Чем занимался:
+                            <ul>
+                                {user.tasks.map((task) => (
+                                    <li key={task}>{task}</li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div>
+                            Навыки:
+                            <ul>
+                                {user.skills.map((skill) => (
+                                    <li key={skill}>Прогресс-бар {skill} </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            Баджи/значки:{" "}
+                            <ul>
+                                {user.badges.map((badge) => (
+                                    <li key={badge}>Бадж {badge.text} </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>Слайдер</div>
                     </div>
                 ) : (
                     <h3>Loading</h3>
