@@ -7,10 +7,8 @@ const Favorites = () => {
     const [users, setUsers] = useState();
 
     useEffect(() => {
-        API.users
-            .fetchAll()
-            .then((data) => setUsers(data.filter((u) => u.bookmark)));
-    }, [users]);
+        API.users.fetchAll().then((data) => setUsers(data));
+    }, []);
 
     const handleToggleUserFavorite = (userId) => {
         setUsers((prev) =>
@@ -20,25 +18,33 @@ const Favorites = () => {
         );
         API.users.toggleUserBookmarkById(userId).then((data) => setUsers(data));
     };
+    const filterUsers = (data) => {
+        if (users) return data.filter((u) => u.bookmark);
+    };
+
+    const filteredUsers = filterUsers(users);
 
     return (
         <>
             <div>
                 <h1 className="text-3xl font-bold">Избранное</h1>
             </div>
-            {!users ? (
+            {!filteredUsers ? (
                 <div className="container mx-auto max-w-2xl flex justify-center items-center h-screen">
                     <Loader />
                 </div>
             ) : (
                 <div className="grid grid-cols-3 gap-5">
-                    {users.map((user) => (
-                        <UserCard
-                            key={user._id}
-                            user={user}
-                            handleToggleUserFavorite={handleToggleUserFavorite}
-                        />
-                    ))}
+                    {filteredUsers &&
+                        filteredUsers.map((user) => (
+                            <UserCard
+                                key={user._id}
+                                user={user}
+                                handleToggleUserFavorite={
+                                    handleToggleUserFavorite
+                                }
+                            />
+                        ))}
                 </div>
             )}
         </>
