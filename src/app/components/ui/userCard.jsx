@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Button from "../common/Button";
 
 const UserCard = ({ user }) => {
     return (
-        <div className="border-solid rounded-md border-black border-2 p-2">
+        <div className="relative border-solid rounded-md border-black border-2 p-2">
             <div>Имя: {user.name}</div>
             <div>Возраст: {user.age}</div>
             <div>
@@ -13,12 +14,36 @@ const UserCard = ({ user }) => {
             <div>О себе: {user.aboutMe}</div>
 
             {/* button потом заменить на компонент Кнопки */}
-            <button className="border-solid rounded-sm border-black border-2">
+            {/* <button className="border-solid rounded-sm border-black border-2">
                 Открыть
             </button>
             <button className="border-solid rounded-sm border-black border-2">
                 Добавить в избранное
-            </button>
+            </button> */}
+            <Button
+                label="Открыть"
+                color="indigo"
+                rounded="rounded-md"
+                handleClick={() => console.log("open card")}
+            />
+            <div className="absolute top-0 right-0 m-2">
+                <Button
+                    color="yellow"
+                    tooltip={"Добавить в избранное"}
+                    handleClick={() => console.log("add favorite")}
+                    rounded="rounded-full"
+                >
+                    <img
+                        className="w-6"
+                        src={
+                            user.bookmark
+                                ? "/assets/icons/star-solid.svg"
+                                : "/assets/icons/star.svg"
+                        }
+                        alt="favorite"
+                    />
+                </Button>
+            </div>
         </div>
     );
 };
