@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import api from "../../api";
+import Slider from "../slider/slider";
 
 const User = () => {
     const params = useParams();
@@ -9,7 +10,7 @@ const User = () => {
 
     useEffect(() => {
         api.users.getById(userId).then((data) => setUser(data));
-    });
+    }, []);
 
     return (
         <div>
@@ -68,7 +69,7 @@ const User = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div>Слайдер</div>
+                        <Slider userId={userId} />
                     </div>
                 ) : (
                     <h3>Loading</h3>

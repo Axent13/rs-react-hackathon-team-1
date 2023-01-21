@@ -175,7 +175,7 @@ const users = [
         name: "Павел Зеленский",
         age: "??",
         aboutMe: "Информация о Павле",
-        photoUrl: createRandomAvatar(),
+        photoUrl: "assets/images/user-a510048c-b12e-4af8-af73-5eac70af21e2.jpg",
         socials: [
             {
                 name: "Github",
