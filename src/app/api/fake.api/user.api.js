@@ -91,27 +91,28 @@ const users = [
     {
         _id: "38565819-0122-4359-98b8-44c28575758d",
         name: "Андрей Перепелкин",
-        age: "??",
-        aboutMe: "Информация об Андрее",
-        photoUrl: createRandomAvatar(),
+        age: "36",
+        aboutMe:
+            "Начинающий Frontend-разработчик из Санкт-Петербурга. Помимо программирования увлекаюсь горными походами, люблю длинные пробежки и активный отдых на природе",
+        photoUrl: "assets/images/38565819-0122-4359-98b8-44c28575758d.jpg",
         socials: [
             {
                 name: "Github",
                 iconUrl: "assets/images/github.png",
-                link: "https://github.com/Axent13"
+                link: "https://github.com/AndrewPerepelkin"
             },
             {
                 name: "Telegram",
                 iconUrl: "assets/images/telegram.png",
-                link: "https://t.me/Axent1398"
+                link: "https://t.me/AndrewVsP"
             },
             {
                 name: "Vk",
                 iconUrl: "assets/images/vk.png",
-                link: "https://vk.com/id492859142"
+                link: "https://vk.com/id3821286"
             }
         ],
-        tasks: ["Основа проекта", "Структура fake.api"],
+        tasks: ["Компонент Button"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
