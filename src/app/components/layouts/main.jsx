@@ -7,7 +7,7 @@ const Main = () => {
     const [users, setUsers] = useState();
 
     useEffect(() => {
-        api.users.fetchAll().then((data) => setUsers(data));
+        api.users.fetchAll().then((data) => setUsers(data).then());
     }, []);
 
     return (
@@ -16,15 +16,17 @@ const Main = () => {
                 <h1 className="text-3xl font-bold">Страница команды</h1>
                 <p>Описание команды</p>
             </div>
-            <div className="grid grid-cols-3 gap-5">
-                {users ? (
-                    users.map((user) => <UserCard key={user._id} user={user} />)
-                ) : (
-                    <div className="container mx-auto max-w-2xl mt-[65px] flex justify-center h-screen">
-                        <Loader />
-                    </div>
-                )}
-            </div>
+            {!users ? (
+                <div className="container mx-auto max-w-2xl flex justify-center items-center h-screen">
+                    <Loader />
+                </div>
+            ) : (
+                <div className="grid grid-cols-3 gap-5">
+                    {users.map((user) => (
+                        <UserCard key={user._id} user={user} />
+                    ))}
+                </div>
+            )}
         </>
     );
 };

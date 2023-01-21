@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import api from "../../api";
-import Loader from "../Loader";
 
 const User = () => {
     const params = useParams();
@@ -72,9 +71,7 @@ const User = () => {
                         <div>Слайдер</div>
                     </div>
                 ) : (
-                    <div className="container mx-auto max-w-2xl mt-[65px] flex justify-center h-screen">
-                        <Loader />
-                    </div>
+                    <h3>Loading...</h3>
                 )}
             </h2>
         </div>
