@@ -6,6 +6,9 @@ module.exports = {
         "bg-indigo-500",
         "bg-yellow-400",
         "bg-yellow-500",
+        "bg-green-600",
+        "bg-teal-500",
+        "bg-orange-600",
         "rounded-md",
         "rounded-full"
     ],
