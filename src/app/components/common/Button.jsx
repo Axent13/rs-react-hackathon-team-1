@@ -18,7 +18,7 @@ const Button = ({ label, rounded, color, handleClick, tooltip, children }) => {
 
 Button.propTypes = {
     label: PropTypes.string,
-    rounded: PropTypes.bool,
+    rounded: PropTypes.string,
     handleClick: PropTypes.func.isRequired,
     color: PropTypes.string.isRequired,
     tooltip: PropTypes.string,
