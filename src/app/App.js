@@ -1,7 +1,16 @@
 import React from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
+import Main from "./components/layouts/main";
+import User from "./components/layouts/user";
 
 function App() {
-    return <h1 className="text-3xl font-bold">Страница команды</h1>;
+    return (
+        <Switch>
+            <Route path="/users/:userId" component={User} />
+            <Route path="/" exact component={Main} />
+            <Redirect to="/" />
+        </Switch>
+    );
 }
 
 export default App;
