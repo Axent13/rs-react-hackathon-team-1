@@ -13,8 +13,9 @@ const users = [
         photoUrl: createRandomAvatar(),
         socials: "Список социальных сетей Михаила",
         tasks: "Перечень задач Михаила",
-        skills: "Навыки Михаила",
-        badges: "Статусы Михаила",
+        skills: "Навыки Михаила (прогресс-бар)",
+        badges: "Статусы Михаила (Badges)",
+        portfolio: "Портфолио Михаила",
         bookmark: false
     },
     {
@@ -25,8 +26,9 @@ const users = [
         photoUrl: createRandomAvatar(),
         socials: "Список социальных сетей Константина",
         tasks: "Перечень задач Константина",
-        skills: "Навыки Константина",
-        badges: "Статусы Константина",
+        skills: "Навыки Константина (прогресс-бар)",
+        badges: "Статусы Константина (Badges)",
+        portfolio: "Портфолио Константина",
         bookmark: false
     },
     {
@@ -36,9 +38,10 @@ const users = [
         aboutMe: "Информация об Андрее",
         photoUrl: createRandomAvatar(),
         socials: "Список социальных сетей Андрея",
-        tasks: "Перечень задач Андрея",
+        tasks: "Перечень задач Андрея (прогресс-бар)",
         skills: "Навыки Андрея",
-        badges: "Статусы Андрея",
+        badges: "Статусы Андрея (Badges)",
+        portfolio: "Портфолио Константина",
         bookmark: false
     },
     {
@@ -48,9 +51,10 @@ const users = [
         aboutMe: "Информация о Максиме",
         photoUrl: createRandomAvatar(),
         socials: "Список социальных сетей Максима",
-        tasks: "Перечень задач Максима",
+        tasks: "Перечень задач Максима (прогресс-бар)",
         skills: "Навыки Максима",
-        badges: "Статусы Максима",
+        badges: "Статусы Максима (Badges)",
+        portfolio: "Портфолио Константина",
         bookmark: false
     },
     {
@@ -60,9 +64,10 @@ const users = [
         aboutMe: "Информация о Павле",
         photoUrl: createRandomAvatar(),
         socials: "Список социальных сетей Павла",
-        tasks: "Перечень задач Павла",
+        tasks: "Перечень задач Павла (прогресс-бар)",
         skills: "Навыки Павла",
-        badges: "Статусы Павла",
+        badges: "Статусы Павла (Badges)",
+        portfolio: "Портфолио Константина",
         bookmark: false
     },
     {
@@ -72,9 +77,10 @@ const users = [
         aboutMe: "Информация об Артеме",
         photoUrl: createRandomAvatar(),
         socials: "Список социальных сетей Артема",
-        tasks: "Перечень задач Артема",
+        tasks: "Перечень задач Артема (прогресс-бар)",
         skills: "Навыки Артема",
-        badges: "Статусы Артема",
+        badges: "Статусы Артема (Badges)",
+        portfolio: "Портфолио Константина",
         bookmark: false
     }
 ];

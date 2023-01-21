@@ -6,7 +6,7 @@ import User from "./components/layouts/user";
 function App() {
     return (
         <Switch>
-            <Route path="/users/:userId" component={User} />
+            <Route path="/user/:userId" component={User} />
             <Route path="/" exact component={Main} />
             <Redirect to="/" />
         </Switch>
