@@ -8,6 +8,9 @@ import NavLogo from "./NavLogo";
 
 const NavBar = ({ children }) => {
     const [isMobilMenuOpen, setMobilMenuOpen] = useState(false);
+    const handleCloseMobilMenu = () => {
+        return setMobilMenuOpen(!isMobilMenuOpen);
+    };
 
     return (
         <>
@@ -22,7 +25,10 @@ const NavBar = ({ children }) => {
                 >
                     {isMobilMenuOpen ? <MenuCloseIcon /> : <MenuIcon />}
                 </div>
-                <MobilMenu isOpen={isMobilMenuOpen} />
+                <MobilMenu
+                    isOpen={isMobilMenuOpen}
+                    onCloseMobilMenu={handleCloseMobilMenu}
+                />
             </header>
             {children}
         </>

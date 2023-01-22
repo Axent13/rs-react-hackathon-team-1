@@ -6,7 +6,9 @@ const NavItem = ({ text, navigate }) => {
     return (
         <Link to={navigate}>
             <div className="cursor-pointer">
-                <span className=" hover:text-white ">{text}</span>
+                <span className="hover:md:text-white hover:text-zinc-600">
+                    {text}
+                </span>
             </div>
         </Link>
     );

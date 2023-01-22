@@ -13,13 +13,13 @@ export const Crumbs = ({ name, id }) => {
                     {pathname !== `/` ? (
                         <a
                             href="/"
-                            className="hover:text-white flex content-center"
+                            className="hover:text-white flex content-center items-baseline"
                         >
-                            <HomeIcon /> <span>Главная</span>
+                            <HomeIcon /> <span className="pl-2">Главная</span>
                         </a>
                     ) : (
-                        <div className="flex content-center">
-                            <HomeIcon /> <span>Главная</span>
+                        <div className="flex content-center items-baseline">
+                            <HomeIcon /> <span className="pl-2">Главная</span>
                         </div>
                     )}
                 </li>

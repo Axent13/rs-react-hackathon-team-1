@@ -51,7 +51,8 @@ const users = [
         _id: "669e86f6-729f-41ee-8a9d-cfaa5c16400a",
         name: "Константин Мухин",
         age: "27",
-        aboutMe: "Информация о Константине",
+        aboutMe:
+            "Учусь Frontend-программированию. Играю в футбол. В свободное время читаю книги по саморазвитию",
         photoUrl: "assets/images/NSjmoC9xb3Y.jpg",
         socials: [
             {
