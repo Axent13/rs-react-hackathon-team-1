@@ -35,7 +35,7 @@ const ProgressBar = ({
         h = 20;
         cfg.widthFull = w;
         cfg.width = (w * val) / 100;
-        cfg.height = h * 0.6;
+        cfg.height = height;
     }
     return (
         <div className="relative w-auto h-auto">
@@ -82,12 +82,13 @@ const ProgressBar = ({
                                     width={cfg.width}
                                     height={cfg.height}
                                     rx={2}
+                                    style={{ fill: color }}
                                 />
                             </g>
                         </g>
                     </svg>
                     <p
-                        className={`absolute top-[3%] left-[45%]  font-sans font-semibold text-xl z-10`}
+                        className={`absolute top-[3%] left-[45%] text-black font-sans font-semibold text-xl z-10`}
                     >
                         {val} {postfix}
                     </p>
@@ -103,7 +104,7 @@ const ProgressBar = ({
                             <style>
                                 {`.cls-1{
                     fill: transparent;
-                    stroke: ${color};
+                    // stroke: ${color};
                     stroke-width: 8px;
                     stroke-linecap: round;
                 }`}
@@ -115,6 +116,7 @@ const ProgressBar = ({
                                     className="cls-1"
                                     // d="M50,0 A50,50 50 0,1 0,100"
                                     d={`${cfg.startPoint} A${R},${R} 0 ${cfg.flags} ${cfg.endPoint}`}
+                                    style={{ stroke: color }}
                                 />
                             </g>
                         </g>

@@ -20,14 +20,17 @@ const styles = {
 
     paddingX: "sm:px-12 px-4",
     paddingY: "sm:py-12 py-4",
+    paddingY_sm: "sm:py-6 py-2",
+    paddingY_top: "sm:pt-4 pt-2",
     padding: "sm:px-12 px-4 sm:py-9 py-3",
+    padding_sm: "sm:px-4 px-2 sm:py-4 py-2",
 
     marginX: "sm:mx-12 mx-4",
     marginY: "sm:my-12 my-4"
 };
 
 export const layout = {
-    section: `flex flex-col ${styles.paddingY}`,
+    section: `flex flex-col ${styles.paddingY_sm}`,
     sectionReverse: `flex flex-col-reverse ${styles.paddingY}`,
 
     sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,

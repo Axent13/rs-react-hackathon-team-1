@@ -2,7 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles, { layout, sliderColor } from "../../../style";
 import ProgressBar from "../common/progressBar";
-import Badge from "../common/Badge";
+import { isHttp } from "../../utils/checkFunc";
+
+const colorPicker = (i) => {
+    return sliderColor.length - 1 < i
+        ? sliderColor[i % (sliderColor.length - 1)]
+        : sliderColor[i];
+};
 
 const UserPage = ({
     name,
@@ -19,14 +25,14 @@ const UserPage = ({
             <section
                 className={`${layout.section} ${styles.marginX} flex flex-col`}
             >
-                <div>
+                <div className={`${styles.paddingY_top}`}>
                     <h2 className={`${styles.heading3} p-2`}>Анкета</h2>
                     <hr className="ring-orange-400" />
                     <div
-                        className={`${styles.flexStartRow} ${styles.paddingY}`}
+                        className={`${styles.flexStartRow} ${styles.padding_sm} gap-2`}
                     >
                         <div
-                            className={`flex-col rounded-lg  justify-center w-72 shadow-sm`}
+                            className={`flex-col grow-0 rounded-lg  justify-center w-72 shadow-sm`}
                         >
                             {/* <p className="text-xs font-body px-4 pb-4 text-slate-400"> */}
                             <p className={`${styles.paragraph2} p-1`}>
@@ -34,14 +40,18 @@ const UserPage = ({
                             </p>
                             <div className="">
                                 <img
-                                    src={"../" + photoUrl}
-                                    className=" rounded-lg"
+                                    src={
+                                        isHttp(photoUrl)
+                                            ? photoUrl
+                                            : "../" + photoUrl
+                                    }
+                                    className="rounded-lg"
                                     alt="photo"
                                 />
                             </div>
                         </div>
                         <div
-                            className={`flex-col rounded-t-lg  justify-center w-72 shadow-sm`}
+                            className={`flex-col grow rounded-t-lg  justify-center w-72 shadow-sm`}
                         >
                             <div className={`justify-start mb-1`}>
                                 <p className={`${styles.paragraph2} p-1`}>
@@ -55,7 +65,7 @@ const UserPage = ({
                                 </div>
                                 <div className={`${styles.paragraph2} p-1`}>
                                     <div
-                                        className={`${styles.flexStart} flex-row gap-2 p-2`}
+                                        className={`${styles.flexStartRow} flex-row gap-2 p-2`}
                                     >
                                         <p>Социальные сети: </p>
                                         {socials.map((social, i) => (
@@ -79,13 +89,12 @@ const UserPage = ({
                                 <div className={`${styles.paragraph2} p-1`}>
                                     <p>Баджи/значки: </p>
                                     <div
-                                        className={`${styles.flexStart} flex-wrap gap-2 p-2`}
+                                        className={`${styles.flexStartRow} flex-wrap gap-2 p-2`}
                                     >
                                         {badges.map((badge, i) => (
-                                            <Badge
-                                                key={`$badge}_${i}`}
-                                                {...badge}
-                                            />
+                                            <div key={`${badge}_${i}`}>
+                                                Бадж {badge.text}
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
@@ -93,12 +102,8 @@ const UserPage = ({
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
                 {/* // **************************** */}
-                <div>
-=======
                 <div className={`${styles.paddingY_top}`}>
->>>>>>> progress-bar
                     <h2 className={`${styles.heading3} p-2`}>
                         Задачи в проекте
                     </h2>
@@ -115,35 +120,61 @@ const UserPage = ({
                     </div>
                 </div>
                 {/* // **************************** */}
-                <div>
+                <div className={`${styles.paddingY_top}`}>
                     <h2 className={`${styles.heading3} p-2`}>Навыки</h2>
                     <hr className="ring-orange-400" />
                     <div className={`${styles.flexStartCol} p-2`}>
-                        <div className={`${styles.flexStart} flex-wrap`}>
-                            {skills.map((skill, ind) => (
-                                <div
-                                    key={`${skill}_${ind}`}
-                                    className="w-36 h-46"
-                                >
-                                    <ProgressBar
-                                        value={(Math.random() * 100).toFixed(0)}
-                                        title={skill}
-                                        type={"circle"} // bar, circle
-                                        postfix={" %"}
-                                        startAngle={90}
-                                        // height = {12}
-                                        color={
-                                            sliderColor.length - 1 < ind
-                                                ? sliderColor[
-                                                      ind %
-                                                          (sliderColor.length -
-                                                              1)
-                                                  ]
-                                                : sliderColor[ind]
-                                        }
-                                    />
-                                </div>
-                            ))}
+                        <div
+                            className={`${styles.flexStart} ${styles.flexStartCol} flex-wrap`}
+                        >
+                            <div className={`${styles.flexStartCol}`}>
+                                {skills
+                                    .slice(0, (skills.length / 2).toFixed(0))
+                                    .map((skill, ind, arr) => {
+                                        const _color = colorPicker(10 - ind);
+                                        return (
+                                            <div key={`${skill}_bar_${ind}`}>
+                                                <div className="w-[500px] h-46">
+                                                    <ProgressBar
+                                                        value={(
+                                                            Math.random() * 100
+                                                        ).toFixed(0)}
+                                                        title={skill}
+                                                        type={"bar"} // bar, circle
+                                                        postfix={" %"}
+                                                        startAngle={90}
+                                                        height={5}
+                                                        color={`${_color}`}
+                                                    />
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                            </div>
+                            <div className={`${styles.flexStartRow}`}>
+                                {skills
+                                    .slice(-(skills.length / 2).toFixed(0))
+                                    .map((skill, ind, arr) => {
+                                        const _color = colorPicker(ind);
+                                        return (
+                                            <div key={`${skill}_circle_${ind}`}>
+                                                <div className="w-44 h-50">
+                                                    <ProgressBar
+                                                        value={(
+                                                            Math.random() * 100
+                                                        ).toFixed(0)}
+                                                        title={skill}
+                                                        type={"circle"} // bar, circle
+                                                        postfix={" %"}
+                                                        startAngle={90}
+                                                        // height = {12}
+                                                        color={`${_color}`}
+                                                    />
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                            </div>
                         </div>
                     </div>
                 </div>

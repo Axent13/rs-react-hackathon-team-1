@@ -14,25 +14,18 @@ const User = () => {
 
     useEffect(() => {
         api.users.getById(userId).then((data) => setUser(data));
-    }, []);
+    }, [userId]);
 
     return (
         <>
             {user ? <Crumbs id={userId} name={user.name} /> : ""}
             <div className={`${styles.boxWidth} ${styles.paddingX}`}>
-                <Title title="Страница Пользователя.">
-                    <strong
-                        className={`absolute top-0 right-0 text-end text-[8px]`}
-                    >
-                        Id: {userId}{" "}
-                    </strong>
-                </Title>
+                <Title title="Страница Пользователя." />
                 {user ? <UserPage {...user} /> : <h2>Loading</h2>}
                 <div className={` ${styles.marginX} ${styles.paragraph1} p-1`}>
                     <Slider userId={userId} />
                 </div>
             </div>
-            <div>{/* <MediumFooter /> */}</div>
         </>
     );
 };
