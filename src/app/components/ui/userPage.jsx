@@ -26,7 +26,7 @@ const UserPage = ({
                 className={`${layout.section} ${styles.marginX} flex flex-col`}
             >
                 <div className={`${styles.paddingY_top}`}>
-                    <h2 className={`${styles.heading3} p-2`}>Анкета</h2>
+                    <h2 className={`${styles.heading3} p-2`}>{name}</h2>
                     <hr className="ring-orange-400" />
                     <div
                         className={`${styles.flexStartRow} ${styles.padding_sm} gap-2`}
@@ -34,11 +34,7 @@ const UserPage = ({
                         <div
                             className={`flex-col grow-0 rounded-lg  justify-center w-72 shadow-sm`}
                         >
-                            {/* <p className="text-xs font-body px-4 pb-4 text-slate-400"> */}
-                            <p className={`${styles.paragraph2} p-1`}>
-                                Фотография:{" "}
-                            </p>
-                            <div className="">
+                            <div>
                                 <img
                                     src={
                                         isHttp(photoUrl)
@@ -49,47 +45,44 @@ const UserPage = ({
                                     alt="photo"
                                 />
                             </div>
+                            <div className="my-4 flex justify-center">
+                                {socials.map((social, i) => (
+                                    <div
+                                        className="max-w-[40px] hover:-translate-y-1 transition-all"
+                                        key={`${social.name}_${i}`}
+                                    >
+                                        <a
+                                            href={social.link}
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src={`../${social.iconUrl}`}
+                                                alt={social.name}
+                                            />
+                                        </a>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                         <div
                             className={`flex-col grow rounded-t-lg  justify-center w-72 shadow-sm`}
                         >
                             <div className={`justify-start mb-1`}>
-                                <p className={`${styles.paragraph2} p-1`}>
-                                    Имя: {name}
-                                </p>
                                 <div className={`${styles.paragraph2} p-1`}>
-                                    Возраст: {age}
+                                    <span className="underline pr-2">
+                                        Возраст:
+                                    </span>
+                                    {age}
                                 </div>
                                 <div className={`${styles.paragraph2} p-1`}>
-                                    О себе: {aboutMe}
+                                    <span className="underline pr-2">
+                                        О себе:
+                                    </span>
+                                    {aboutMe}
                                 </div>
                                 <div className={`${styles.paragraph2} p-1`}>
                                     <div
-                                        className={`${styles.flexStartRow} flex-row gap-2 p-2`}
-                                    >
-                                        <p>Социальные сети: </p>
-                                        {socials.map((social, i) => (
-                                            <div
-                                                className="max-w-[40px]"
-                                                key={`${social.name}_${i}`}
-                                            >
-                                                <a
-                                                    href={social.link}
-                                                    rel="noopener noreferrer"
-                                                >
-                                                    <img
-                                                        src={`../${social.iconUrl}`}
-                                                        alt={social.name}
-                                                    />
-                                                </a>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                                <div className={`${styles.paragraph2} p-1`}>
-                                    <p>Баджи/значки: </p>
-                                    <div
-                                        className={`${styles.flexStartRow} flex-wrap gap-2 p-2`}
+                                        className={`${styles.flexStartRow} flex-wrap gap-2 pr-2`}
                                     >
                                         {badges.map((badge, i) => (
                                             <div key={`${badge}_${i}`}>

@@ -20,7 +20,7 @@ const User = () => {
         <>
             {user ? <Crumbs id={userId} name={user.name} /> : ""}
             <div className={`${styles.boxWidth} ${styles.paddingX}`}>
-                <Title title="Страница Пользователя." />
+                <Title title="Анкета учатсника" />
                 {user ? <UserPage {...user} /> : <h2>Loading</h2>}
                 <div className={` ${styles.marginX} ${styles.paragraph1} p-1`}>
                     <Slider userId={userId} />
