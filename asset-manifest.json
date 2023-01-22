@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rs-react-hackathon-team-1/static/css/main.9731d8f4.css",
-    "main.js": "/rs-react-hackathon-team-1/static/js/main.ae89cb22.js",
+    "main.js": "/rs-react-hackathon-team-1/static/js/main.685574a9.js",
     "static/media/background.png": "/rs-react-hackathon-team-1/static/media/background.3f8b26595812620fc96b.png",
     "index.html": "/rs-react-hackathon-team-1/index.html",
     "main.9731d8f4.css.map": "/rs-react-hackathon-team-1/static/css/main.9731d8f4.css.map",
-    "main.ae89cb22.js.map": "/rs-react-hackathon-team-1/static/js/main.ae89cb22.js.map"
+    "main.685574a9.js.map": "/rs-react-hackathon-team-1/static/js/main.685574a9.js.map"
   },
   "entrypoints": [
     "static/css/main.9731d8f4.css",
-    "static/js/main.ae89cb22.js"
+    "static/js/main.685574a9.js"
   ]
 }
