@@ -33,18 +33,26 @@ const Favorites = () => {
                 <div className="container mx-auto max-w-2xl flex justify-center items-center h-screen">
                     <Loader />
                 </div>
+            ) : filteredUsers.length === 0 ? (
+                <div className="container mx-auto max-w-2xl flex justify-center items-center flex-col h-screen">
+                    <div>
+                        <img
+                            className="h-16 invert"
+                            src="/assets/icons/empty.svg"
+                            alt="empty"
+                        />
+                    </div>
+                    <div>Тут пока пусто</div>
+                </div>
             ) : (
                 <div className="grid grid-cols-3 gap-5">
-                    {filteredUsers &&
-                        filteredUsers.map((user) => (
-                            <UserCard
-                                key={user._id}
-                                user={user}
-                                handleToggleUserFavorite={
-                                    handleToggleUserFavorite
-                                }
-                            />
-                        ))}
+                    {filteredUsers.map((user) => (
+                        <UserCard
+                            key={user._id}
+                            user={user}
+                            handleToggleUserFavorite={handleToggleUserFavorite}
+                        />
+                    ))}
                 </div>
             )}
         </>

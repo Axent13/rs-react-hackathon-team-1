@@ -8,16 +8,18 @@ import Wrapper from "./components/wrapper";
 
 function App() {
     return (
-        <Wrapper>
-            <NavBar>
-                <Switch>
-                    <Route path="/user/:userId" component={User} />
-                    <Route path="/favorites" component={Favorites} />
-                    <Route path="/" exact component={Main} />
-                    <Redirect to="/" />
-                </Switch>
-            </NavBar>
-        </Wrapper>
+        <div className="bg-main bg-no-repeat bg-cover bg-black text-sky-300 font-main text-2xl">
+            <Wrapper>
+                <NavBar>
+                    <Switch>
+                        <Route path="/user/:userId" component={User} />
+                        <Route path="/favorites" component={Favorites} />
+                        <Route path="/" exact component={Main} />
+                        <Redirect to="/" />
+                    </Switch>
+                </NavBar>
+            </Wrapper>
+        </div>
     );
 }
 
