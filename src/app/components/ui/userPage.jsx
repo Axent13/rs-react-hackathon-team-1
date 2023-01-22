@@ -37,11 +37,7 @@ const UserPage = ({
                         >
                             <div>
                                 <img
-                                    src={
-                                        isHttp(photoUrl)
-                                            ? photoUrl
-                                            : "../" + photoUrl
-                                    }
+                                    src={isHttp(photoUrl) ? photoUrl : photoUrl}
                                     className="rounded-lg"
                                     alt="photo"
                                 />
@@ -57,7 +53,7 @@ const UserPage = ({
                                             rel="noopener noreferrer"
                                         >
                                             <img
-                                                src={`../${social.iconUrl}`}
+                                                src={social.iconUrl}
                                                 alt={social.name}
                                             />
                                         </a>
