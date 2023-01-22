@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles, { layout, sliderColor } from "../../../style";
 import ProgressBar from "../common/progressBar";
+import Badge from "../common/Badge";
 
 const UserPage = ({
     name,
@@ -81,10 +82,17 @@ const UserPage = ({
                                         className={`${styles.flexStart} flex-wrap gap-2 p-2`}
                                     >
                                         {badges.map((badge, i) => (
+                                            <Badge
+                                                key={`$badge}_${i}`}
+                                                {...badge}
+                                            />
+                                        ))}
+
+                                        {/* {badges.map((badge, i) => (
                                             <div key={`${badge}_${i}`}>
                                                 Бадж {badge.text}
                                             </div>
-                                        ))}
+                                        ))} */}
                                     </div>
                                 </div>
                             </div>
