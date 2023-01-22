@@ -1,8 +1,8 @@
-function createRandomAvatar() {
-    return `https://avatars.dicebear.com/api/avataaars/${(Math.random() + 1)
-        .toString(36)
-        .substring(7)}.svg`;
-}
+// function createRandomAvatar() {
+//     return `https://avatars.dicebear.com/api/avataaars/${(Math.random() + 1)
+//         .toString(36)
+//         .substring(7)}.svg`;
+// }
 
 const users = [
     {
@@ -50,27 +50,27 @@ const users = [
     {
         _id: "669e86f6-729f-41ee-8a9d-cfaa5c16400a",
         name: "Константин Мухин",
-        age: "??",
+        age: "27",
         aboutMe: "Информация о Константине",
-        photoUrl: createRandomAvatar(),
+        photoUrl: "assets/images/NSjmoC9xb3Y.jpg",
         socials: [
             {
                 name: "Github",
                 iconUrl: "assets/images/github.png",
-                link: "https://github.com/Axent13"
+                link: "https://github.com/Im-Myxa"
             },
             {
                 name: "Telegram",
                 iconUrl: "assets/images/telegram.png",
-                link: "https://t.me/Axent1398"
+                link: "https://t.me/Iam_Myxa"
             },
             {
                 name: "Vk",
                 iconUrl: "assets/images/vk.png",
-                link: "https://vk.com/id492859142"
+                link: "https://vk.com/id95259245"
             }
         ],
-        tasks: ["Основа проекта", "Структура fake.api"],
+        tasks: ["NavBar", "Breadcrumbs", "Wrapper"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
@@ -78,7 +78,7 @@ const users = [
                 color: "bg-green-600"
             },
             {
-                text: "36 группа (Премиум)",
+                text: "35 группа (Премиум)",
                 color: "bg-teal-500"
             },
             {

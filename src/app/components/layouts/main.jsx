@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import api from "../../api";
+import { Crumbs } from "../Breadcrumbs";
 import Loader from "../common/Loader";
 import UserCard from "../ui/userCard";
 
@@ -21,6 +22,7 @@ const Main = () => {
 
     return (
         <>
+            <Crumbs />
             <div>
                 <h1 className="text-5xl font-header text-center text-sky-400 underline my-4">
                     Hackathon React Team 1
