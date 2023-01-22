@@ -207,27 +207,28 @@ const users = [
     {
         _id: "313f94a7-90e9-4ac0-ac16-ee65579615c4",
         name: "Смирнов Артем",
-        age: "??",
-        aboutMe: "Информация об Артеме",
-        photoUrl: createRandomAvatar(),
+        age: "28",
+        aboutMe:
+            "Привет. На потоке в RS.school изучаю Frontend. Преподаю ангийский язык разным возрастным группам. Увлекаюсь сноубордом и танцами.",
+        photoUrl: "assets/images/313f94a7-90e9-4ac0-ac16-ee65579615c4.jpg",
         socials: [
             {
                 name: "Github",
                 iconUrl: "assets/images/github.png",
-                link: "https://github.com/Axent13"
+                link: "https://github.com/GawainTolle"
             },
             {
                 name: "Telegram",
                 iconUrl: "assets/images/telegram.png",
-                link: "https://t.me/Axent1398"
+                link: "https://t.me/percher"
             },
             {
                 name: "Vk",
                 iconUrl: "assets/images/vk.png",
-                link: "https://vk.com/id492859142"
+                link: "https://vk.com/glutsoffunky"
             }
         ],
-        tasks: ["Основа проекта", "Структура fake.api"],
+        tasks: ["Badge/значки"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
