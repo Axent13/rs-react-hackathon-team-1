@@ -6,7 +6,7 @@ const NavLogo = () => {
         <div className="flex items-center">
             <Link to={"/"}>
                 <img
-                    src="https://sun6-22.userapi.com/s/v1/ig2/bzJVy-eBt0u7rysYREZYaKc77JjvBbF8LaXqUrqyPkMuVRoCz1d4Yx4XD3Y2Gd13yi3rQbSHm3gagt0Oj1rJXNfe.jpg?size=1033x1033&quality=95&crop=0,0,1033,1033&ava=1"
+                    src="https://avatars.dzeninfra.ru/get-zen-logos/200214/pub_622b617eafe23b7233a9fde9_622b62b35e4d0a774e195bf0/scale_2400"
                     alt="Logo"
                     className="w-16 h-16 cursor-pointer"
                 />

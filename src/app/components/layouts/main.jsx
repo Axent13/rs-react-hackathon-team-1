@@ -22,7 +22,9 @@ const Main = () => {
     return (
         <>
             <div>
-                <h1 className="text-3xl font-bold">hackathon React Team 1</h1>
+                <h1 className="text-5xl font-header text-center text-sky-400 underline">
+                    Hackathon React Team 1
+                </h1>
                 <p>
                     Мы - команда целеустермленных начинающих
                     frontend-разработчиков!

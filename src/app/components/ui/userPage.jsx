@@ -117,7 +117,7 @@ const UserPage = ({
                             {skills.map((skill, ind) => (
                                 <div
                                     key={`${skill}_${ind}`}
-                                    className="bg-slate-100 w-36 h-46"
+                                    className="w-36 h-46"
                                 >
                                     <ProgressBar
                                         value={(Math.random() * 100).toFixed(0)}

@@ -7,13 +7,20 @@ const UserCard = ({ user, handleToggleUserFavorite }) => {
     const history = useHistory();
     return (
         <div className="relative border-solid rounded-md border-black border-2 p-2">
-            <div>Имя: {user.name}</div>
-            <div>Возраст: {user.age}</div>
-            <div>
-                Фотография: <img className="max-w-xs" src={user.photoUrl} />
+            <div className="shadow">
+                <img
+                    className="max-w-xs mx-auto rounded-lg"
+                    src={user.photoUrl}
+                />
             </div>
             <div>
-                Социальные сети:
+                <span className="underline">Имя:</span> {user.name}
+            </div>
+            <div>
+                <span className="underline">Возраст:</span> {user.age}
+            </div>
+            <div>
+                <span className="underline">Социальные сети:</span>
                 {user.socials.map((social) => (
                     <div className="max-w-[40px]" key={social.name}>
                         <a
@@ -26,7 +33,9 @@ const UserCard = ({ user, handleToggleUserFavorite }) => {
                     </div>
                 ))}
             </div>
-            <div>О себе: {user.aboutMe}</div>
+            <div>
+                <span className="underline">О себе:</span> {user.aboutMe}
+            </div>
 
             {/* button потом заменить на компонент Кнопки */}
             {/* <button className="border-solid rounded-sm border-black border-2">
