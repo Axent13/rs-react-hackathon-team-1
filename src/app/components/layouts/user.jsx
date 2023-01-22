@@ -17,9 +17,7 @@ const User = () => {
 
     return (
         <>
-            <div
-                className={`${styles.boxWidth} ${styles.paddingX}  ${styles.background}`}
-            >
+            <div className={`${styles.boxWidth} ${styles.paddingX}`}>
                 <Title title="Страница Пользователя.">
                     <strong
                         className={`absolute top-0 right-0 text-end text-[8px]`}

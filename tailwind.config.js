@@ -13,7 +13,15 @@ module.exports = {
         "rounded-full"
     ],
     theme: {
-        extend: {}
+        extend: {
+            backgroundImage: {
+                main: "url('app/background.png')"
+            },
+            fontFamily: {
+                main: ["Sofia Sans Extra Condensed"],
+                header: ["rajdhani"]
+            }
+        }
     },
     plugins: []
 };
