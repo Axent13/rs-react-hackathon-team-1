@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styles, { layout, sliderColor } from "../../../style";
 import ProgressBar from "../common/progressBar";
 import { isHttp } from "../../utils/checkFunc";
+import Badge from "../common/Badge";
 
 const colorPicker = (i) => {
     return sliderColor.length - 1 < i
@@ -81,13 +82,12 @@ const UserPage = ({
                                     {aboutMe}
                                 </div>
                                 <div className={`${styles.paragraph2} p-1`}>
-                                    <div
-                                        className={`${styles.flexStartRow} flex-wrap gap-2 pr-2`}
-                                    >
+                                    <div className={`${styles.flexStartRow}`}>
                                         {badges.map((badge, i) => (
-                                            <div key={`${badge}_${i}`}>
-                                                Бадж {badge.text}
-                                            </div>
+                                            <Badge
+                                                key={`$badge}_${i}`}
+                                                {...badge}
+                                            />
                                         ))}
                                     </div>
                                 </div>
@@ -95,7 +95,6 @@ const UserPage = ({
                         </div>
                     </div>
                 </div>
-                {/* // **************************** */}
                 <div className={`${styles.paddingY_top}`}>
                     <h2 className={`${styles.heading3} p-2`}>
                         Задачи в проекте
@@ -112,7 +111,6 @@ const UserPage = ({
                         ))}
                     </div>
                 </div>
-                {/* // **************************** */}
                 <div className={`${styles.paddingY_top}`}>
                     <h2 className={`${styles.heading3} p-2`}>Навыки</h2>
                     <hr className="ring-orange-400" />

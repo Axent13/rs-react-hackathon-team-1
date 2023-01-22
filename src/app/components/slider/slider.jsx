@@ -3,6 +3,7 @@ import API from "../../api";
 import { useHistory } from "react-router";
 import SliderLine from "./sliderLine/sliderLine";
 import PropTypes from "prop-types";
+import Loader from "../common/Loader";
 
 const Slider = ({ userId }) => {
     const history = useHistory();
@@ -126,7 +127,7 @@ const Slider = ({ userId }) => {
             </div>
         </div>
     ) : (
-        "Loading..."
+        <Loader />
     );
 };
 
