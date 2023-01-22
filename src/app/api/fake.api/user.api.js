@@ -133,27 +133,23 @@ const users = [
     {
         _id: "48edb443-9c0d-4423-9f1f-dfd163559236",
         name: "Голодов Максим",
-        age: "??",
-        aboutMe: "Информация о Максиме",
-        photoUrl: createRandomAvatar(),
+        age: "38",
+        aboutMe: `Руководитель проектов в компании АО "Моделирование и цифровые двойники". Основновной вид работы разработка web-интерфейсов и логики цифровыхдвойников технологического оборудования и тех. процессов.
+        Участвую в задачах по интеграция моделями и системами математического моделировния. Увлекаюсь футболом и горными лыжами.`,
+        photoUrl: "assets/images/48edb443-9c0d-4423-9f1f-dfd163559236_foto.jpg",
         socials: [
             {
                 name: "Github",
                 iconUrl: "assets/images/github.png",
-                link: "https://github.com/Axent13"
+                link: "https://github.com/MaxSUD84"
             },
             {
                 name: "Telegram",
                 iconUrl: "assets/images/telegram.png",
-                link: "https://t.me/Axent1398"
-            },
-            {
-                name: "Vk",
-                iconUrl: "assets/images/vk.png",
-                link: "https://vk.com/id492859142"
+                link: "https://t.me/Max_SUD_84"
             }
         ],
-        tasks: ["Основа проекта", "Структура fake.api"],
+        tasks: ["ProgressBar", "Структура fake.api"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
