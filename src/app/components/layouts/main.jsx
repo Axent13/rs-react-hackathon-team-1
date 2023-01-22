@@ -22,8 +22,16 @@ const Main = () => {
     return (
         <>
             <div>
-                <h1 className="text-3xl font-bold">Страница команды</h1>
-                <p>Описание команды</p>
+                <h1 className="text-3xl font-bold">hackathon React Team 1</h1>
+                <p>
+                    Мы - команда целеустермленных начинающих
+                    frontend-разработчиков!
+                </p>
+                <p>
+                    Несмотря на то, что мы из разных городов, часовых поясов и
+                    разных учебных групп - это не ничуть мешает нам вести
+                    продуктивную и слаженную работу над нашим проектом! :-)
+                </p>
             </div>
             {!users ? (
                 <div className="container mx-auto max-w-2xl flex justify-center items-center h-screen">
