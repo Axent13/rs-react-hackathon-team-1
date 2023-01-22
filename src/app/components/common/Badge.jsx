@@ -11,7 +11,7 @@ const Badge = ({ text, color }) => {
                 />
             );
         }
-        if (text === "36 группа (Премиум)") {
+        if (text.includes("группа")) {
             return (
                 <img
                     src={"/assets/icons/userGroup.svg"}
@@ -30,12 +30,12 @@ const Badge = ({ text, color }) => {
     };
 
     return (
-        <span
-            className={`inline-block ${color} text-white text-xs px-1 px-3 rounded-full`}
+        <div
+            className={`flex ${color} text-white px-4 rounded-full items-center text-2xl p-2 mr-2`}
         >
             {renderIcons()}
-            {text}
-        </span>
+            <span className="pl-2">{text}</span>
+        </div>
     );
 };
 

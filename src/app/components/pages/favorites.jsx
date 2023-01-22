@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../../api";
-import { Crumbs } from "../Breadcrumbs";
+import { Crumbs } from "../common/Breadcrumbs";
 import Loader from "../common/Loader";
 import UserCard from "../ui/userCard";
 

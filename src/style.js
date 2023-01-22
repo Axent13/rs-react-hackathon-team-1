@@ -5,11 +5,10 @@ const styles = {
     heading2:
         "font-poppins font-semibold xs:text-[48px] text-[40px] text-zink-100 xs:leading-[76.8px] leading-[66.8px] w-full",
     heading3:
-        "font-poppins font-semibold xs:text-[32px] text-[24px] text-amber-200 xs:leading-[46px] leading-[36px] w-full",
+        "font-poppins font-semibold xs:text-2xl text-[24px] text-amber-200 xs:leading-[46px] leading-[36px] w-full",
     paragraph1:
-        "font-poppins font-normal text-slate-100 text-[18px] leading-[30.8px]",
-    paragraph2:
-        "font-poppins font-normal text-slate-200 text-[16px] leading-[24px]",
+        "font-poppins font-normal text-slate-100 text-2xl leading-[30.8px]",
+    paragraph2: "font-main text-slate-200 text-2xl",
 
     flexCenterRow: "flex flex-row justify-center items-center",
     flexCenterCol: "flex flex-col justify-center items-center",

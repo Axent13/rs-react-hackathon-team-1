@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const SliderLine = ({ slides, setCurrentIdx, currentIdx }) => {
     return (
-        <div className="flex items-end h-32 transition-all duration-300 ease-linear">
+        <div className="flex items-end h-40 transition-all duration-300 ease-linear">
             {slides.map((slide, idx) => {
                 const isActive = idx === currentIdx;
                 return (

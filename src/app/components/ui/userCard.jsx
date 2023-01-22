@@ -10,7 +10,7 @@ const UserCard = ({ user, handleToggleUserFavorite }) => {
             <div>
                 <div>
                     <img
-                        className="mx-auto rounded-lg h-80 w-80 object-cover"
+                        className="mx-auto my-4 rounded-lg h-80 w-80 object-cover"
                         src={user.photoUrl}
                     />
                 </div>

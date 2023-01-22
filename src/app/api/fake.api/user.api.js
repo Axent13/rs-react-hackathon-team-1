@@ -1,9 +1,3 @@
-// function createRandomAvatar() {
-//     return `https://avatars.dicebear.com/api/avataaars/${(Math.random() + 1)
-//         .toString(36)
-//         .substring(7)}.svg`;
-// }
-
 const users = [
     {
         _id: "48d5f821-6151-4474-b475-49f80ecc1395",
@@ -29,7 +23,7 @@ const users = [
                 link: "https://vk.com/id492859142"
             }
         ],
-        tasks: ["Основа проекта", "Структура fake.api"],
+        tasks: ["Тимлид", "Основа проекта", "Структура fake.api"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
@@ -237,7 +231,7 @@ const users = [
                 color: "bg-green-600"
             },
             {
-                text: "36 группа (Премиум)",
+                text: "38 группа",
                 color: "bg-teal-500"
             },
             {

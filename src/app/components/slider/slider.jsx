@@ -3,6 +3,7 @@ import API from "../../api";
 import { useHistory } from "react-router";
 import SliderLine from "./sliderLine/sliderLine";
 import PropTypes from "prop-types";
+import Loader from "../common/Loader";
 
 const Slider = ({ userId }) => {
     const history = useHistory();
@@ -19,19 +20,12 @@ const Slider = ({ userId }) => {
         if (users) {
             const arr = [];
             users.forEach((user) => {
-                // console.log(user._id);
                 arr.push(user._id);
             });
             setArrIdUsers(arr);
-            // console.log(arr);
             setCurrentIdx(arr.findIndex((id) => id === userId || 0));
         }
     }, [users]);
-
-    // console.log(users);
-
-    // const isPrevDisabled = currentIdx === 0;
-    // const isNextDisabled = currentIdx + 1 === users.length;
 
     const nextHandler = () => {
         setCurrentIdx((prev) =>
@@ -46,7 +40,6 @@ const Slider = ({ userId }) => {
     };
 
     const setCurHandler = (_userId) => {
-        // console.log(userId);
         setCurrentIdx(arrIdUsers.findIndex((id) => id === _userId || 0));
         history.push(`/user/${_userId}`);
     };
@@ -71,41 +64,35 @@ const Slider = ({ userId }) => {
         return _user;
     };
 
-    // if (users && arrIdUsers.length) {
-    //     console.log(getNearArr(currentIdx));
-    // }
-
     return users && arrIdUsers.length ? (
         <div className="mt-2">
             <div className="flex items-center mb-16 p-4">
-                <div>Другие участники проекта</div>
+                <p className="mx-auto underline">Другие участники проекта</p>
             </div>
             <div className="flex flex-row justify-center items-center">
-                <div className="w-40 h-full pr-5 bg-slate-50">
+                <div className="bg-transparent rotate-180 hover:scale-105 hover:opacity-80 active:scale-90">
                     <button
                         className="m-5"
                         disabled={currentIdx === 0 ? "disabled" : null}
                         onClick={prevHandler}
                     >
                         <img
-                            src={"../assets/icons/back.svg"}
+                            src={"../assets/icons/arrow-circle.png"}
                             className="rounded-lg"
                             alt="назад"
                             width={80}
                             height={80}
                         />
-                        {/* назад */}
                     </button>
                 </div>
                 <div>
                     <SliderLine
-                        // slides={users.filter((user) => user._id !== userId)}
                         slides={getNearArr(currentIdx)}
                         setCurrentIdx={setCurHandler}
                         currentIdx={currentIdx}
                     />
                 </div>
-                <div className="w-40 h-full pl-5 bg-slate-50">
+                <div className="bg-transparent hover:scale-105 hover:opacity-80 active:scale-90">
                     <button
                         className="m-5"
                         disabled={
@@ -114,19 +101,18 @@ const Slider = ({ userId }) => {
                         onClick={nextHandler}
                     >
                         <img
-                            src={"../assets/icons/forward.svg"}
+                            src={"../assets/icons/arrow-circle.png"}
                             className="rounded-lg"
                             alt="вперед"
                             width={80}
                             height={80}
                         />
-                        {/* вперед */}
                     </button>
                 </div>
             </div>
         </div>
     ) : (
-        "Loading..."
+        <Loader />
     );
 };
 
