@@ -13,14 +13,7 @@ const UserCard = ({ user, handleToggleUserFavorite }) => {
                     src={user.photoUrl}
                 />
             </div>
-            <div>
-                <span className="underline">Имя:</span> {user.name}
-            </div>
-            <div>
-                <span className="underline">Возраст:</span> {user.age}
-            </div>
-            <div>
-                <span className="underline">Социальные сети:</span>
+            <div className="my-4 flex justify-center">
                 {user.socials.map((social) => (
                     <div className="max-w-[40px]" key={social.name}>
                         <a
@@ -33,6 +26,13 @@ const UserCard = ({ user, handleToggleUserFavorite }) => {
                     </div>
                 ))}
             </div>
+            <div>
+                <span className="underline">Имя:</span> {user.name}
+            </div>
+            <div>
+                <span className="underline">Возраст:</span> {user.age}
+            </div>
+
             <div>
                 <span className="underline">О себе:</span> {user.aboutMe}
             </div>
