@@ -104,7 +104,6 @@ const ProgressBar = ({
                             <style>
                                 {`.cls-1{
                     fill: transparent;
-                    // stroke: ${color};
                     stroke-width: 8px;
                     stroke-linecap: round;
                 }`}
@@ -114,7 +113,6 @@ const ProgressBar = ({
                             <g id="Layer_1-2" data-name="Layer 1">
                                 <path
                                     className="cls-1"
-                                    // d="M50,0 A50,50 50 0,1 0,100"
                                     d={`${cfg.startPoint} A${R},${R} 0 ${cfg.flags} ${cfg.endPoint}`}
                                     style={{ stroke: color }}
                                 />

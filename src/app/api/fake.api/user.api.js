@@ -1,9 +1,3 @@
-// function createRandomAvatar() {
-//     return `https://avatars.dicebear.com/api/avataaars/${(Math.random() + 1)
-//         .toString(36)
-//         .substring(7)}.svg`;
-// }
-
 const users = [
     {
         _id: "48d5f821-6151-4474-b475-49f80ecc1395",

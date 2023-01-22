@@ -26,7 +26,6 @@ export const Crumbs = ({ name, id }) => {
                 <li>
                     {pathname === `/user/${id}` ? (
                         <div className="flex content-center">
-                            {/* <span className="mx-2">/</span> */}
                             <NavigateNextIcon />
                             <span>Участник - {name}</span>
                         </div>
@@ -37,7 +36,6 @@ export const Crumbs = ({ name, id }) => {
                 <li>
                     {pathname === `/favorites` ? (
                         <div className="flex content-center">
-                            {/* <span className="mx-2">/</span> */}
                             <NavigateNextIcon />
                             <span>Избранные</span>
                         </div>
