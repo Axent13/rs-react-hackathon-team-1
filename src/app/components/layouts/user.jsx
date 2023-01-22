@@ -5,7 +5,7 @@ import api from "../../api";
 import styles from "../../../style";
 import UserPage from "../ui/userPage";
 import Slider from "../slider/slider";
-import { Crumbs } from "../Breadcrumbs";
+import { Crumbs } from "../common/Breadcrumbs";
 
 const User = () => {
     const params = useParams();

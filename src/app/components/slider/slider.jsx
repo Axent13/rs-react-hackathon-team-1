@@ -67,7 +67,7 @@ const Slider = ({ userId }) => {
     return users && arrIdUsers.length ? (
         <div className="mt-2">
             <div className="flex items-center mb-16 p-4">
-                <div>Другие участники проекта</div>
+                <p className="mx-auto underline">Другие участники проекта</p>
             </div>
             <div className="flex flex-row justify-center items-center">
                 <div className="bg-transparent rotate-180 hover:scale-105 hover:opacity-80 active:scale-90">

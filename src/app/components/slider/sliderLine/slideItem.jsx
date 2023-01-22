@@ -10,7 +10,7 @@ const SlideItem = ({ slide, isActive, clickHandler }) => {
     return (
         <button
             onClick={() => clickHandler(slide._id)}
-            className={`relative mr-8 tarnsition-all duration-300 ease-in-out hover:-translate-y-2 ${
+            className={`relative mx-4 tarnsition-all duration-300 ease-in-out hover:-translate-y-2 ${
                 isActive ? "h-50 w-50" : "h-40 w-40"
             }`}
         >

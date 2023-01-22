@@ -82,7 +82,9 @@ const UserPage = ({
                                     {aboutMe}
                                 </div>
                                 <div className={`${styles.paragraph2} p-1`}>
-                                    <div className={`${styles.flexStartRow}`}>
+                                    <div
+                                        className={`${styles.flexStartCol} lg:flex-row`}
+                                    >
                                         {badges.map((badge, i) => (
                                             <Badge
                                                 key={`$badge}_${i}`}
@@ -158,7 +160,6 @@ const UserPage = ({
                                                         type={"circle"} // bar, circle
                                                         postfix={" %"}
                                                         startAngle={90}
-                                                        // height = {12}
                                                         color={`${_color}`}
                                                     />
                                                 </div>

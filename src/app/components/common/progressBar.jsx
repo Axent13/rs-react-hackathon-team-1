@@ -38,7 +38,7 @@ const ProgressBar = ({
         cfg.height = height;
     }
     return (
-        <div className="relative w-auto h-auto">
+        <div className="relative w-auto h-auto mt-2">
             <p
                 className={`top-0 left-0 font-sans px-1 font-semibold text-xl z-10`}
             >

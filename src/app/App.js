@@ -2,9 +2,9 @@ import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Main from "./components/layouts/main";
 import User from "./components/layouts/user";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/common/NavBar";
 import Favorites from "./components/pages/favorites";
-import Wrapper from "./components/wrapper";
+import Wrapper from "./components/common/wrapper";
 
 function App() {
     return (
