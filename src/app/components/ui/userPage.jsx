@@ -93,8 +93,12 @@ const UserPage = ({
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 {/* // **************************** */}
                 <div>
+=======
+                <div className={`${styles.paddingY_top}`}>
+>>>>>>> progress-bar
                     <h2 className={`${styles.heading3} p-2`}>
                         Задачи в проекте
                     </h2>
