@@ -26,7 +26,7 @@ const Favorites = () => {
 
     return (
         <>
-            <div>
+            <div className="my-2">
                 <h1 className="text-3xl font-bold">Избранное</h1>
             </div>
             {!filteredUsers ? (
@@ -45,7 +45,7 @@ const Favorites = () => {
                     <div>Тут пока пусто</div>
                 </div>
             ) : (
-                <div className="grid grid-cols-3 gap-5">
+                <div className="flex flex-wrap justify-around">
                     {filteredUsers.map((user) => (
                         <UserCard
                             key={user._id}
