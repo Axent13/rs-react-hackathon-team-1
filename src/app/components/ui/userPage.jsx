@@ -102,7 +102,6 @@ const UserPage = ({
                         </div>
                     </div>
                 </div>
-                {/* // **************************** */}
                 <div className={`${styles.paddingY_top}`}>
                     <h2 className={`${styles.heading3} p-2`}>
                         Задачи в проекте
