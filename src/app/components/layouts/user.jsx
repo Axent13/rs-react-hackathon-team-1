@@ -5,6 +5,7 @@ import api from "../../api";
 import styles from "../../../style";
 import UserPage from "../ui/userPage";
 import Slider from "../slider/slider";
+import { Crumbs } from "../Breadcrumbs";
 
 const User = () => {
     const params = useParams();
@@ -17,6 +18,7 @@ const User = () => {
 
     return (
         <>
+            {user ? <Crumbs id={userId} name={user.name} /> : ""}
             <div className={`${styles.boxWidth} ${styles.paddingX}`}>
                 <Title title="Страница Пользователя.">
                     <strong

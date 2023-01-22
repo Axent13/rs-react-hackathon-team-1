@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../../api";
+import { Crumbs } from "../Breadcrumbs";
 import Loader from "../common/Loader";
 import UserCard from "../ui/userCard";
 
@@ -26,6 +27,7 @@ const Favorites = () => {
 
     return (
         <>
+            <Crumbs />
             <div className="my-2">
                 <h1 className="text-3xl font-bold">Избранное</h1>
             </div>
