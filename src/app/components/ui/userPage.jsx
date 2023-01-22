@@ -87,12 +87,6 @@ const UserPage = ({
                                                 {...badge}
                                             />
                                         ))}
-
-                                        {/* {badges.map((badge, i) => (
-                                            <div key={`${badge}_${i}`}>
-                                                Бадж {badge.text}
-                                            </div>
-                                        ))} */}
                                     </div>
                                 </div>
                             </div>
