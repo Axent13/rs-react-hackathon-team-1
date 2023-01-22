@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Title from "../hoc/withTitle";
 import api from "../../api";
-import styles, { layout } from "../../../style";
+import styles from "../../../style";
 import UserPage from "../ui/userPage";
+import Slider from "../slider/slider";
 
 const User = () => {
     const params = useParams();
@@ -27,6 +28,9 @@ const User = () => {
                     </strong>
                 </Title>
                 {user ? <UserPage {...user} /> : <h2>Loading</h2>}
+                <div className={` ${styles.marginX} ${styles.paragraph1} p-1`}>
+                    <Slider userId={userId} />
+                </div>
             </div>
             <div>{/* <MediumFooter /> */}</div>
         </>

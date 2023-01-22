@@ -142,9 +142,6 @@ const UserPage = ({
                     </div>
                 </div>
             </section>
-            <div className={` ${styles.marginX} ${styles.paragraph1} p-1`}>
-                Слайдер
-            </div>
         </>
     );
 };

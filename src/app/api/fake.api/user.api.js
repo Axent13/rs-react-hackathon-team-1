@@ -170,27 +170,23 @@ const users = [
     {
         _id: "a510048c-b12e-4af8-af73-5eac70af21e2",
         name: "Павел Зеленский",
-        age: "??",
-        aboutMe: "Информация о Павле",
-        photoUrl: createRandomAvatar(),
+        age: "33",
+        aboutMe:
+            "Привет. Я Павел. Учусь на разработчика. Люблю спорт и отдых на природе. Занимаюсь военно-тактическими играми и хожу в походы.",
+        photoUrl: "assets/images/user-a510048c-b12e-4af8-af73-5eac70af21e2.jpg",
         socials: [
             {
                 name: "Github",
                 iconUrl: "assets/images/github.png",
-                link: "https://github.com/Axent13"
+                link: "https://https://github.com/PavelZelenskiy"
             },
             {
                 name: "Telegram",
                 iconUrl: "assets/images/telegram.png",
-                link: "https://t.me/Axent1398"
-            },
-            {
-                name: "Vk",
-                iconUrl: "assets/images/vk.png",
-                link: "https://vk.com/id492859142"
+                link: "https://t.me/PavelZelensky"
             }
         ],
-        tasks: ["Основа проекта", "Структура fake.api"],
+        tasks: ["Slider"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
