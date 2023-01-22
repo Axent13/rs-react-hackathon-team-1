@@ -112,7 +112,7 @@ const users = [
                 link: "https://vk.com/id3821286"
             }
         ],
-        tasks: ["Компонент Button"],
+        tasks: ["Компонент Button", "Loader", "Favorites"],
         skills: ["HTML", "CSS", "JavaScript", "React"],
         badges: [
             {
