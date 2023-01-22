@@ -5,21 +5,22 @@ const users = [
         age: "31",
         aboutMe:
             "Привет! :-) Меня зовут Михаил! Занимаюсь изучением Frontend-разработки. В свободное от учебы и работы время люблю изучать иностранные языки (английский и немного пробую японский и корейский). На данный момент живу и работаю в г. Томск.",
-        photoUrl: "assets/images/user-48d5f821-6151-4474-b475-49f80ecc1395.jpg",
+        photoUrl:
+            "https://i.ibb.co/ww5jzqw/user-48d5f821-6151-4474-b475-49f80ecc1395.jpg",
         socials: [
             {
                 name: "Github",
-                iconUrl: "assets/images/github.png",
+                iconUrl: "https://i.ibb.co/0y5mxN9/github.png",
                 link: "https://github.com/Axent13"
             },
             {
                 name: "Telegram",
-                iconUrl: "assets/images/telegram.png",
+                iconUrl: "https://i.ibb.co/SnZSyth/telegram.png",
                 link: "https://t.me/Axent1398"
             },
             {
                 name: "Vk",
-                iconUrl: "assets/images/vk.png",
+                iconUrl: "https://i.ibb.co/fvJkS11/vk.png",
                 link: "https://vk.com/id492859142"
             }
         ],
@@ -47,21 +48,21 @@ const users = [
         age: "27",
         aboutMe:
             "Учусь Frontend-программированию. Играю в футбол. В свободное время читаю книги по саморазвитию",
-        photoUrl: "assets/images/NSjmoC9xb3Y.jpg",
+        photoUrl: "https://i.ibb.co/09R7xfL/NSjmo-C9xb3-Y.jpg",
         socials: [
             {
                 name: "Github",
-                iconUrl: "assets/images/github.png",
+                iconUrl: "https://i.ibb.co/0y5mxN9/github.png",
                 link: "https://github.com/Im-Myxa"
             },
             {
                 name: "Telegram",
-                iconUrl: "assets/images/telegram.png",
+                iconUrl: "https://i.ibb.co/SnZSyth/telegram.png",
                 link: "https://t.me/Iam_Myxa"
             },
             {
                 name: "Vk",
-                iconUrl: "assets/images/vk.png",
+                iconUrl: "https://i.ibb.co/fvJkS11/vk.png",
                 link: "https://vk.com/id95259245"
             }
         ],
@@ -89,21 +90,22 @@ const users = [
         age: "36",
         aboutMe:
             "Начинающий Frontend-разработчик из Санкт-Петербурга. Помимо программирования увлекаюсь горными походами, люблю длинные пробежки и активный отдых на природе",
-        photoUrl: "assets/images/38565819-0122-4359-98b8-44c28575758d.jpg",
+        photoUrl:
+            "https://i.ibb.co/xgRth28/38565819-0122-4359-98b8-44c28575758d.jpg",
         socials: [
             {
                 name: "Github",
-                iconUrl: "assets/images/github.png",
+                iconUrl: "https://i.ibb.co/0y5mxN9/github.png",
                 link: "https://github.com/AndrewPerepelkin"
             },
             {
                 name: "Telegram",
-                iconUrl: "assets/images/telegram.png",
+                iconUrl: "https://i.ibb.co/SnZSyth/telegram.png",
                 link: "https://t.me/AndrewVsP"
             },
             {
                 name: "Vk",
-                iconUrl: "assets/images/vk.png",
+                iconUrl: "https://i.ibb.co/fvJkS11/vk.png",
                 link: "https://vk.com/id3821286"
             }
         ],
@@ -131,16 +133,17 @@ const users = [
         age: "38",
         aboutMe: `Руководитель проектов в компании АО "Моделирование и цифровые двойники". Основновной вид работы разработка web-интерфейсов и логики цифровыхдвойников технологического оборудования и тех. процессов.
         Участвую в задачах по интеграция моделями и системами математического моделировния. Увлекаюсь футболом и горными лыжами.`,
-        photoUrl: "assets/images/48edb443-9c0d-4423-9f1f-dfd163559236_foto.jpg",
+        photoUrl:
+            "https://i.ibb.co/QYg2qrt/48edb443-9c0d-4423-9f1f-dfd163559236-foto.jpg",
         socials: [
             {
                 name: "Github",
-                iconUrl: "assets/images/github.png",
+                iconUrl: "https://i.ibb.co/0y5mxN9/github.png",
                 link: "https://github.com/MaxSUD84"
             },
             {
                 name: "Telegram",
-                iconUrl: "assets/images/telegram.png",
+                iconUrl: "https://i.ibb.co/SnZSyth/telegram.png",
                 link: "https://t.me/Max_SUD_84"
             }
         ],
@@ -168,16 +171,17 @@ const users = [
         age: "33",
         aboutMe:
             "Привет. Я Павел. Учусь на разработчика. Люблю спорт и отдых на природе. Занимаюсь военно-тактическими играми и хожу в походы.",
-        photoUrl: "assets/images/user-a510048c-b12e-4af8-af73-5eac70af21e2.jpg",
+        photoUrl:
+            "https://i.ibb.co/PrKJL5h/user-a510048c-b12e-4af8-af73-5eac70af21e2.jpg",
         socials: [
             {
                 name: "Github",
-                iconUrl: "assets/images/github.png",
+                iconUrl: "https://i.ibb.co/0y5mxN9/github.png",
                 link: "https://github.com/PavelZelenskiy"
             },
             {
                 name: "Telegram",
-                iconUrl: "assets/images/telegram.png",
+                iconUrl: "https://i.ibb.co/SnZSyth/telegram.png",
                 link: "https://t.me/PavelZelensky"
             }
         ],
@@ -205,21 +209,22 @@ const users = [
         age: "28",
         aboutMe:
             "Привет. На потоке в RS.school изучаю Frontend. Преподаю ангийский язык разным возрастным группам. Увлекаюсь сноубордом и танцами.",
-        photoUrl: "assets/images/313f94a7-90e9-4ac0-ac16-ee65579615c4.jpg",
+        photoUrl:
+            "https://i.ibb.co/1smPBMf/313f94a7-90e9-4ac0-ac16-ee65579615c4.jpg",
         socials: [
             {
                 name: "Github",
-                iconUrl: "assets/images/github.png",
+                iconUrl: "https://i.ibb.co/0y5mxN9/github.png",
                 link: "https://github.com/GawainTolle"
             },
             {
                 name: "Telegram",
-                iconUrl: "assets/images/telegram.png",
+                iconUrl: "https://i.ibb.co/SnZSyth/telegram.png",
                 link: "https://t.me/percher"
             },
             {
                 name: "Vk",
-                iconUrl: "assets/images/vk.png",
+                iconUrl: "https://i.ibb.co/fvJkS11/vk.png",
                 link: "https://vk.com/glutsoffunky"
             }
         ],

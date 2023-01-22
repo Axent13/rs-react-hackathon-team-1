@@ -51,8 +51,8 @@ const UserCard = ({ user, handleToggleUserFavorite }) => {
                             className="w-6"
                             src={
                                 user.bookmark
-                                    ? "/assets/icons/star-solid.svg"
-                                    : "/assets/icons/star.svg"
+                                    ? "https://i.ibb.co/kM9h5Dd/star-solid.png"
+                                    : "https://i.ibb.co/gjvXVyK/star.png"
                             }
                             alt="favorite"
                         />

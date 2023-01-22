@@ -40,7 +40,7 @@ const Favorites = () => {
                     <div>
                         <img
                             className="h-16 invert"
-                            src="/assets/icons/empty.svg"
+                            src="https://i.ibb.co/cy1nprz/empty-1.png"
                             alt="empty"
                         />
                     </div>

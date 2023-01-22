@@ -6,7 +6,7 @@ const Badge = ({ text, color }) => {
         if (text === "Ученики") {
             return (
                 <img
-                    src={"/assets/icons/academicCap.svg"}
+                    src={"https://i.ibb.co/Ryvqmyr/academic-Cap.png"}
                     className="h-6 w-6 text-blue-500"
                 />
             );
@@ -14,7 +14,7 @@ const Badge = ({ text, color }) => {
         if (text.includes("группа")) {
             return (
                 <img
-                    src={"/assets/icons/userGroup.svg"}
+                    src={"https://i.ibb.co/841ZyNd/user-Group.png"}
                     className="h-6 w-6 text-blue-500"
                 />
             );
@@ -22,7 +22,7 @@ const Badge = ({ text, color }) => {
         if (text === "Хакатон React team 1") {
             return (
                 <img
-                    src={"/assets/icons/share.svg"}
+                    src={"https://i.ibb.co/rQBgNr9/share.png"}
                     className="h-6 w-6 text-blue-500"
                 />
             );

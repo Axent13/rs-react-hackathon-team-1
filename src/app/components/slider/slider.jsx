@@ -77,7 +77,7 @@ const Slider = ({ userId }) => {
                         onClick={prevHandler}
                     >
                         <img
-                            src={"../assets/icons/arrow-circle.png"}
+                            src={"https://i.ibb.co/ZYMPfNY/arrow-circle.png"}
                             className="rounded-lg"
                             alt="назад"
                             width={80}
@@ -101,7 +101,7 @@ const Slider = ({ userId }) => {
                         onClick={nextHandler}
                     >
                         <img
-                            src={"../assets/icons/arrow-circle.png"}
+                            src={"https://i.ibb.co/ZYMPfNY/arrow-circle.png"}
                             className="rounded-lg"
                             alt="вперед"
                             width={80}
