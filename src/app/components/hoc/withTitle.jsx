@@ -5,7 +5,7 @@ import styles from "../../../style";
 const Title = ({ title = "", children }) => {
     return (
         <div
-            className={`${styles.flexStartRow} w-full bg-gradient-to-r from-primary-2 via-primary-300 to-transparent`} // align-middle
+            className={`${styles.flexStartRow} pt-4  w-full bg-gradient-to-r from-primary-2 via-primary-300 to-transparent`} // align-middle
         >
             {title && (
                 <h1 className={`${styles.heading3} w-auto items-start`}>

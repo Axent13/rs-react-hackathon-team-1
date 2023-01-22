@@ -12,6 +12,7 @@ const SliderLine = ({ slides, setCurrentIdx, currentIdx }) => {
                         key={slide._id}
                         slide={slide}
                         isActive={isActive}
+                        clickHandler={setCurrentIdx}
                     />
                 );
             })}
