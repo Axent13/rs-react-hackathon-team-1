@@ -22,14 +22,14 @@ const Main = () => {
     return (
         <>
             <div>
-                <h1 className="text-5xl font-header text-center text-sky-400 underline">
+                <h1 className="text-5xl font-header text-center text-sky-400 underline my-4">
                     Hackathon React Team 1
                 </h1>
-                <p>
+                <p className="text-center">
                     Мы - команда целеустермленных начинающих
                     frontend-разработчиков!
                 </p>
-                <p>
+                <p className="text-center my-3">
                     Несмотря на то, что мы из разных городов, часовых поясов и
                     разных учебных групп - это не ничуть мешает нам вести
                     продуктивную и слаженную работу над нашим проектом! :-)
@@ -40,7 +40,7 @@ const Main = () => {
                     <Loader />
                 </div>
             ) : (
-                <div className="grid grid-cols-3 gap-5">
+                <div className="flex flex-wrap justify-around">
                     {users.map((user) => (
                         <UserCard
                             key={user._id}

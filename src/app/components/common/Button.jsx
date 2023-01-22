@@ -5,9 +5,9 @@ const Button = ({ label, rounded, color, handleClick, tooltip, children }) => {
     return (
         <button
             type="button"
-            className={`inline-flex w-full items-center justify-center py-4 px-4 leading-6 shadow text-sm font-medium ${
+            className={`inline-flex w-full items-center justify-center py-4 px-4 leading-6 shadow text-lg font-medium ${
                 rounded || ""
-            } text-white bg-${color}-500 hover:bg-${color}-400 focus:outline-none my-2`}
+            } text-white bg-${color}-500 hover:scale-105 focus:outline-none my-2 transition-all`}
             onClick={handleClick}
             title={tooltip}
         >

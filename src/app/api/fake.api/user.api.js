@@ -178,7 +178,7 @@ const users = [
             {
                 name: "Github",
                 iconUrl: "assets/images/github.png",
-                link: "https://https://github.com/PavelZelenskiy"
+                link: "https://github.com/PavelZelenskiy"
             },
             {
                 name: "Telegram",
